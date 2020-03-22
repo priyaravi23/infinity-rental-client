@@ -8,7 +8,7 @@ const movies = [
     numberInStock: 6,
     dailyRentalRate: 2.5,
     publishDate: "2018-01-03T19:04:28.809Z",
-      liked: true
+      liked: false
   },
   {
     _id: "5b21ca3eeb7f6fbccd471816",
@@ -23,14 +23,14 @@ const movies = [
     title: "Mission Impossible",
     genre: { _id: "5b21ca3eeb7f6fbccd471820", name: "Action" },
     numberInStock: 8,
-    dailyRentalRate: 4.5,
-      liked: false
+    dailyRentalRate: 5.5,
+      liked: true
   },
   {
     _id: "5b21ca3eeb7f6fbccd471819",
-    title: "Twilight",
+    title: "The Twilight Saga",
     genre: { _id: "5b21ca3eeb7f6fbccd471814", name: "Fantasy" },
-    numberInStock: 7,
+    numberInStock: 9,
     dailyRentalRate: 3.5,
       liked: false
   },
@@ -54,7 +54,7 @@ const movies = [
     _id: "5b21ca3eeb7f6fbccd47181e",
     title: "Harry Potter",
     genre: { _id: "5b21ca3eeb7f6fbccd471820", name: "Fantasy" },
-    numberInStock: 10,
+    numberInStock: 11,
     dailyRentalRate: 7.9,
       liked: true
   },
@@ -73,7 +73,32 @@ const movies = [
     numberInStock: 7,
     dailyRentalRate: 3.5,
       liked: false
-  }
+  },
+    {
+        _id: "5b21ca3eeb7f6fbccd471810",
+        title: "Underworld",
+        genre: { _id: "5b21ca3eeb7f6fbccd471810", name: "Thriller" },
+        numberInStock: 6,
+        dailyRentalRate: 2.5,
+        publishDate: "2018-01-03T19:04:28.809Z",
+        liked: false
+    },
+    {
+        _id: "5b21ca3eeb7f6fbccd471812",
+        title: "Resident Evil",
+        genre: { _id: "5b21ca3eeb7f6fbccd471812", name: "Thriller" },
+        numberInStock: 6,
+        dailyRentalRate: 2.5,
+        liked: false
+    },
+    {
+        _id: "5b21ca3eeb7f6fbccd471811",
+        title: "The Hobbit",
+        genre: { _id: "5b21ca3eeb7f6fbccd471811", name: "Fantasy" },
+        numberInStock: 10,
+        dailyRentalRate: 7.9,
+        liked: true
+    }
 ];
 
 export function getMovies() {
