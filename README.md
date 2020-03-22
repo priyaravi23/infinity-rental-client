@@ -1,4 +1,4 @@
-## Movies App Using React Class Components
+## Movies App Using React Components For Sorting, Filtering, & Pagination of data 
 
 ![](public/movies.png)
 
