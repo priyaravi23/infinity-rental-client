@@ -1,12 +1,12 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 
-const NavBar = ({ user }) => {
+const NavBar = () => {
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <Link className="navbar-brand" to="/">
-                Vidly
-            </Link>
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div className="navbar-brand">
+                Movie Rentals App
+            </div>
             <button
                 className="navbar-toggler"
                 type="button"
@@ -28,6 +28,12 @@ const NavBar = ({ user }) => {
                     </NavLink>
                     <NavLink className="nav-item nav-link" to="/rentals">
                         Rentals
+                    </NavLink>
+                    <NavLink className="nav-item nav-link" to="/login">
+                        Login
+                    </NavLink>
+                    <NavLink className="nav-item nav-link" to="/register">
+                        Register
                     </NavLink>
                 </div>
             </div>
