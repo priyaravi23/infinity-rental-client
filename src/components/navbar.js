@@ -4,9 +4,9 @@ import { Link, NavLink } from "react-router-dom";
 const NavBar = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div className="navbar-brand">
-                Movie Rentals App
-            </div>
+            <Link className="navbar-brand" to="/">
+                EnFlix <code><i>Rentals</i></code>
+            </Link>
             <button
                 className="navbar-toggler"
                 type="button"
@@ -23,17 +23,11 @@ const NavBar = () => {
                     <NavLink className="nav-item nav-link" to="/movies">
                         Movies
                     </NavLink>
-                    <NavLink className="nav-item nav-link" to="/customers">
-                        Customers
-                    </NavLink>
-                    <NavLink className="nav-item nav-link" to="/rentals">
-                        Rentals
+                    <NavLink className="nav-item nav-link" to="/series">
+                        TV Series
                     </NavLink>
                     <NavLink className="nav-item nav-link" to="/login">
-                        Login
-                    </NavLink>
-                    <NavLink className="nav-item nav-link" to="/register">
-                        Register
+                        Sign In
                     </NavLink>
                 </div>
             </div>

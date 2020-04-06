@@ -1,8 +1,9 @@
 import React from "react";
 import Joi from "joi-browser";
-import Form from "./common/form";
 import { getMovie, saveMovie } from "../services/fakeMovieService";
 import { getGenres } from "../services/fakeGenreService";
+import Form from "./common/form";
+import '../index.css';
 
 class MovieForm extends Form {
     state = {
@@ -67,16 +68,37 @@ class MovieForm extends Form {
 
     render() {
         return (
-            <div>
-                <h1>Movie Form</h1>
-                <form onSubmit={this.handleSubmit}>
-                    {this.renderInput("title", "Title")}
-                    {this.renderSelect("genreId", "Genre", this.state.genres)}
-                    {this.renderInput("numberInStock", "Number in Stock", "number")}
-                    {this.renderInput("dailyRentalRate", "Rate")}
-                    {this.renderButton("Save")}
-                </form>
-            </div>
+            <React.Fragment>
+                <div className='container'>
+                    <div className='row'>
+                        <div className='col'>
+                            <div className='card'>
+                                <div className="header">
+                                    <div className="row">
+                                        <h3 className='h3-text'>
+                                            Add Movie
+                                        </h3>
+                                    </div>
+
+                                    <div className="row">
+                                        <p></p>
+                                    </div>
+                                </div>
+
+                                <div className='card-body'>
+                                    <form onSubmit={this.handleSubmit}>
+                                        {this.renderInput("title", "Title")}
+                                        {this.renderSelect("genreId", "Genre", this.state.genres)}
+                                        {this.renderInput("numberInStock", "Number in Stock", "number")}
+                                        {this.renderInput("dailyRentalRate", "Rate")}
+                                        {this.renderButton("Save")}
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </React.Fragment>
         );
     }
 }

@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import MoviesTable from "./moviesTable";
-import ListGroup from "./common/listGroup";
+import DropDown from "./common/dropDown";
 import Pagination from "./common/pagination";
 import { getMovies, deleteMovie } from "../services/fakeMovieService";
 import { getGenres } from "../services/fakeGenreService";
 import { paginate } from "../utils/paginate";
 import _ from "lodash";
 import SearchBox from "./searchBox";
+import '../index.css';
 
 class Movies extends Component {
     state = {
@@ -91,37 +92,63 @@ class Movies extends Component {
         const { totalCount, data: movies } = this.getPagedData();
 
         return (
-            <div className="row">
-                <div className="col-3">
-                    <ListGroup
-                        items={this.state.genres}
-                        selectedItem={this.state.selectedGenre}
-                        onItemSelect={this.handleGenreSelect}
-                    />
-                </div>
-                <div className="col">
-                    <Link
-                        to="/movies/new"
-                        className="btn btn-primary"
-                        style={{ marginBottom: 20 }}
-                    >
-                        New Movie
-                    </Link>
-                    <p>Showing {totalCount} movies in the database.</p>
-                    <SearchBox value={searchQuery} onChange={this.handleSearch} />
-                    <MoviesTable
-                        movies={movies}
-                        sortColumn={sortColumn}
-                        onLike={this.handleLike}
-                        onDelete={this.handleDelete}
-                        onSort={this.handleSort}
-                    />
-                    <Pagination
-                        itemsCount={totalCount}
-                        pageSize={pageSize}
-                        currentPage={currentPage}
-                        onPageChange={this.handlePageChange}
-                    />
+            <div className='container'>
+                <div className='row'>
+                    <div className='col'>
+                        <div className='card'>
+                            <div className='card-body'>
+                                <div className="row">
+                                    <div className="col">
+
+                                        <p>Showing {totalCount} movies in the database.</p>
+
+                                        <div className="container">
+                                            <div className="row">
+                                                <div className="col-4">
+                                                    <DropDown
+                                                        items={this.state.genres}
+                                                        selectedItem={this.state.selectedGenre}
+                                                        onItemSelect={this.handleGenreSelect}
+                                                    />
+                                                </div>
+
+                                                <div className="col-4">
+                                                    <SearchBox
+                                                        value={searchQuery}
+                                                        onChange={this.handleSearch}
+                                                    />
+                                                </div>
+
+                                                <div className="col-4">
+                                                    <Link
+                                                        to="/movies/new"
+                                                        className="btn btn-primary"
+                                                        style={{ marginBottom: 20 }}
+                                                    >
+                                                        Add Movie
+                                                    </Link>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <MoviesTable
+                                            movies={movies}
+                                            sortColumn={sortColumn}
+                                            onLike={this.handleLike}
+                                            onDelete={this.handleDelete}
+                                            onSort={this.handleSort}
+                                        />
+                                        <Pagination
+                                            itemsCount={totalCount}
+                                            pageSize={pageSize}
+                                            currentPage={currentPage}
+                                            onPageChange={this.handlePageChange}
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         );

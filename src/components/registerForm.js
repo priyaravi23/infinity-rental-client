@@ -41,6 +41,10 @@ class RegisterForm extends Form {
                                             Sign Up
                                         </h3>
                                     </div>
+
+                                    <div className="row">
+                                        <p></p>
+                                    </div>
                                 </div>
 
                                 <div className='card-body'>
@@ -55,7 +59,7 @@ class RegisterForm extends Form {
                                 <div className='footer'>
 
                                     <div className='row'>
-                                        <p className='font-small white-text mb-2 pt-3'>
+                                        <p className='font-small text-white mb-2 pt-3'>
                                             or Sign up with
                                         </p>
                                     </div>

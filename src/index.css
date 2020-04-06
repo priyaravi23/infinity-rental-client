@@ -49,12 +49,14 @@ code {
 }
 
 .header {
-  background: linear-gradient(40deg, #ffd86f, #fc6262);
+  background-color: #000000;
+  background-image: linear-gradient(315deg, #000000 0%, #5e5368 74%);
   padding-top: 1rem;
 }
 
 .footer {
-  background-color: #929fba;
+  background-color: #ca7968;
+  background-image: linear-gradient(315deg, #ca7968 0%, #0c0c0c 74%);
   padding-top: 1rem;
 }
 
@@ -79,7 +81,7 @@ code {
   color: white;
 }
 
-h3 {
+.h3-text {
   font-size: 1.75rem;
   color: white;
   padding-top: 1rem;

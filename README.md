@@ -1,6 +1,6 @@
 ## Movies App Using React Components For Sorting, Filtering, & Pagination of data 
 
-![](public/movies.png)
+![](public/rental-app.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

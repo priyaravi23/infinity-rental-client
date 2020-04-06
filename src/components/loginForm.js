@@ -33,7 +33,7 @@ class LoginForm extends Form {
                             <div className='card'>
                                 <div className="header">
                                     <div className="row">
-                                        <h3>
+                                        <h3 className='h3-text'>
                                             Log in
                                         </h3>
                                     </div>
