@@ -2,7 +2,7 @@ import React from "react";
 import Joi from "joi-browser";
 import Form from "./common/form";
 import { Link } from 'react-router-dom';
-import '../index.css';
+import '../form.css';
 
 class LoginForm extends Form {
     state = {
@@ -27,60 +27,55 @@ class LoginForm extends Form {
     render() {
         return (
             <React.Fragment>
-                <div className='container'>
-                    <div className='row'>
-                        <div className='col'>
-                            <div className='card'>
-                                <div className="header">
-                                    <div className="row">
-                                        <h3 className='h3-text'>
-                                            Log in
-                                        </h3>
-                                    </div>
-
-                                    <div className='row'>
-                                        <a href="#!" className="fa-lg p-2 m-2 fb-ic">
-                                            <i className="fab fa-facebook-f"></i>
-                                        </a>
-                                        <a href="#!" className="fa-lg p-2 m-2 tw-ic">
-                                            <i className="fab fa-twitter"></i>
-                                        </a>
-                                        <a href="#!" className="fa-lg p-2 m-2 gplus-ic">
-                                            <i className="fab fa-google-plus-g"></i>
-                                        </a>
+                <div className='login-container'>
+                    <div className="d-flex justify-content-center h-100">
+                            <div className='login-card'>
+                                <div className="login-card-header">
+                                    <h3>Sign In</h3>
+                                    <div className="d-flex justify-content-end social_icon">
+                                        <span><i className="fab fa-facebook-square"></i></span>
+                                        <span><i className="fab fa-google-plus-square"></i></span>
+                                        <span><i className="fab fa-twitter-square"></i></span>
                                     </div>
                                 </div>
 
-                                <div className='card-body'>
+                                <div className='login-card-body'>
                                     <form
                                         onSubmit={this.handleSubmit}>
-                                        {this.renderInput("username", "Username")}
-                                        {this.renderInput("password", "Password", "password")}
 
-                                        <p className="font-small grey-text d-flex justify-content-end">
-                                            Forgot
-                                            <a
-                                                href="#!"
-                                                className="dark-grey-text ml-1 font-weight-bold"
-                                            >
-                                                Password?
-                                            </a>
-                                        </p>
+                                        <div className="input-group form-group">
+                                            <div className="form-group input-group-prepend">
+                                                <span className="input-group-text"><i className="fas fa-user"></i></span>
+                                            </div>
 
-                                        {this.renderButton("Sign In")}
+                                            {this.renderInput("username", "")}
+
+                                        </div>
+
+                                        <div className="input-group form-group">
+                                            <div className="form-group input-group-prepend">
+                                                <span className="input-group-text"><i className="fas fa-key"></i></span>
+                                            </div>
+                                            {this.renderInput("password", "", "password")}
+                                        </div>
+
+                                        <div className="form-group">
+                                            {this.renderButton("Sign In")}
+                                        </div>
+
                                     </form>
                                 </div>
 
-                                <div className="modal-footer">
-                                    <p className="font-small grey-text d-flex justify-content-end">
-                                        Not a member?
-                                        <Link to='/register'  className="blue-text ml-1">
-
-                                            Sign Up
-                                        </Link>
-                                    </p>
+                            <div className="login-card-footer">
+                                <div className="d-flex justify-content-center links">
+                                    Don't have an account?
+                                    <Link to='/register'>
+                                        Sign Up
+                                    </Link>
                                 </div>
-
+                                <div className="d-flex justify-content-center">
+                                    <a href="#">Forgot your password?</a>
+                                </div>
                             </div>
                         </div>
                     </div>

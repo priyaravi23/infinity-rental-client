@@ -6,6 +6,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding: 0 0 0 0;
+  background:url('https://www.ecopetit.cat/wpic/mpic/86-861174_1080x1920-http-full-hd-abstract-mobile.jpg');
+  background-size: cover;
 }
 
 code {
@@ -50,7 +52,7 @@ code {
 
 .header {
   background-color: #000000;
-  background-image: linear-gradient(315deg, #000000 0%, #5e5368 74%);
+  background-image: linear-gradient(315deg, #000000 0%, #958e69 74%);
   padding-top: 1rem;
 }
 
@@ -62,8 +64,8 @@ code {
 }
 
 .footer {
-  background-color: #ca7968;
-  background-image: linear-gradient(315deg, #ca7968 0%, #0c0c0c 74%);
+  background-color: #000000;
+  background-image: linear-gradient(315deg, #000000 0%, #958e69 74%);
   padding-top: 1rem;
 }
 
@@ -84,14 +86,106 @@ code {
   padding-left: 15px;
 }
 
-.fab {
-  color: white;
-}
-
 .h3-text {
   font-size: 1.75rem;
   color: white;
   padding-top: 1rem;
   margin-bottom: 1rem;
   font-weight: bold;
+}
+
+.grid-container {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+  width: 100%;
+  display: grid;
+  /* Define Auto Row size */
+  grid-auto-rows: 400px;
+  /*Define our columns */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1em;
+}
+
+.grid-item {
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  height: 400px;
+}
+
+.img-cover {
+  height: 90%;
+  width: 100%;
+}
+
+.navbar {
+  margin-bottom: 0px;
+}
+
+.carousel-caption {
+  top: 30%;
+  bottom: auto;
+}
+
+.h1-text {
+  font-size: 60px;
+  font-weight: bold;
+  color: #7ed6df;
+}
+
+.h5-text {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.d-block{
+  opacity: 0.75;
+}
+
+.button {
+  border-radius: 5px;
+  background-color: #B96446;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 10px;
+  width: 170px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.btn {
+  width: 100%;
+}
+
+.form-control {
+  display: inline-block;
 }

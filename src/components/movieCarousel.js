@@ -19,11 +19,10 @@ const MovieCarousel = () => {
                     <img className="d-block w-100" src={RentalApp} alt="First slide" />
 
                     <div className="carousel-caption d-none d-md-block">
-                        <h2>Rent or Buy</h2>
-                        <h5>Movies & TV Series</h5>
-                        <Link to='/movies'  className="blue-text ml-1">
-
-                            Browse
+                        <h1 className='h1-text'>Rent or Buy</h1>
+                        <h5 className='h5-text'>Movies & TV Shows</h5>
+                        <Link to='/movies'>
+                            <button className='button'><span>Browse</span></button>
                         </Link>
                     </div>
                 </div>

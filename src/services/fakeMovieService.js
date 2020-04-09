@@ -16,7 +16,7 @@ const movies = [
         genre: { _id: "5b21ca3eeb7f6fbccd471811", name: "Horror" },
         numberInStock: 5,
         dailyRentalRate: 2.5,
-        liked: true
+        liked: false
     },
   {
     _id: "5b21ca3eeb7f6fbccd471816",
@@ -32,14 +32,14 @@ const movies = [
         genre: { _id: "5b21ca3eeb7f6fbccd471811", name: "Horror" },
         numberInStock: 5,
         dailyRentalRate: 2.5,
-        liked: false
+        liked: true
     },
   {
     _id: "5b21ca3eeb7f6fbccd471817",
     title: "Mission Impossible",
     genre: { _id: "5b21ca3eeb7f6fbccd471818", name: "Action" },
     numberInStock: 8,
-    dailyRentalRate: 5.5,
+    dailyRentalRate: 7.5,
       liked: true
   },
   {
@@ -54,9 +54,9 @@ const movies = [
         _id: "5b21ca3eeb7f6fbccd471717",
         title: "Saw",
         genre: { _id: "5b21ca3eeb7f6fbccd471811", name: "Horror" },
-        numberInStock: 5,
-        dailyRentalRate: 2.5,
-        liked: false
+        numberInStock: 10,
+        dailyRentalRate: 5.5,
+        liked: true
     },
     {
         _id: "5b21ca3eeb7f6fbccd471724",
@@ -102,8 +102,8 @@ const movies = [
     _id: "5b21ca3eeb7f6fbccd47181f",
     title: "Deep Blue Sea",
     genre: { _id: "5b21ca3eeb7f6fbccd471820", name: "Thriller" },
-    numberInStock: 4,
-    dailyRentalRate: 3.5,
+    numberInStock: 6,
+    dailyRentalRate: 5.5,
       liked: false
   },
   {
@@ -111,15 +111,15 @@ const movies = [
     title: "Avengers",
     genre: { _id: "5b21ca3eeb7f6fbccd471818", name: "Action" },
     numberInStock: 7,
-    dailyRentalRate: 3.5,
+    dailyRentalRate: 7.5,
       liked: false
   },
     {
         _id: "5b21ca3eeb7f6fbccd471810",
         title: "Underworld",
         genre: { _id: "5b21ca3eeb7f6fbccd471820", name: "Thriller" },
-        numberInStock: 6,
-        dailyRentalRate: 2.5,
+        numberInStock: 8,
+        dailyRentalRate: 6.5,
         publishDate: "2018-01-03T19:04:28.809Z",
         liked: false
     },
@@ -157,27 +157,91 @@ const movies = [
     },
     {
         _id: "5b21ca3eeb7f6fbccd471721",
-        title: "Bourne",
+        title: "Bourne Series",
         genre: { _id: "5b21ca3eeb7f6fbccd471818", name: "Action" },
-        numberInStock: 5,
-        dailyRentalRate: 2.5,
+        numberInStock: 9,
+        dailyRentalRate: 6.5,
         liked: true
     },
     {
         _id: "5b21ca3eeb7f6fbccd471722",
         title: "Hunger Games",
         genre: { _id: "5b21ca3eeb7f6fbccd471812", name: "Dystopian" },
-        numberInStock: 5,
-        dailyRentalRate: 2.5,
-        liked: false
+        numberInStock: 7,
+        dailyRentalRate: 5.5,
+        liked: true
     },
     {
         _id: "5b21ca3eeb7f6fbccd471723",
         title: "Maze Runner",
         genre: { _id: "5b21ca3eeb7f6fbccd471812", name: "Dystopian" },
+        numberInStock: 7,
+        dailyRentalRate: 4.5,
+        liked: true
+    },
+    {
+        _id: "5b21ca3eeb7f6fbccd471724",
+        title: "Final Destination",
+        genre: { _id: "5b21ca3eeb7f6fbccd471820", name: "Thriller" },
         numberInStock: 5,
         dailyRentalRate: 2.5,
+        liked: false
+    },
+    {
+        _id: "5b21ca3eeb7f6fbccd471729",
+        title: "Insidious",
+        genre: { _id: "5b21ca3eeb7f6fbccd471811", name: "Horror" },
+        numberInStock: 2,
+        dailyRentalRate: 2.5,
+        liked: false
+    },
+    {
+        _id: "5b21ca3eeb7f6fbccd471725",
+        title: "Drag Me To Hell",
+        genre: { _id: "5b21ca3eeb7f6fbccd471811", name: "Horror" },
+        numberInStock: 5,
+        dailyRentalRate: 2.5,
+        liked: false
+    },
+    {
+        _id: "5b21ca3eeb7f6fbccd471726",
+        title: "30 Days Of Night",
+        genre: { _id: "5b21ca3eeb7f6fbccd471811", name: "Horror" },
+        numberInStock: 5,
+        dailyRentalRate: 2.5,
+        liked: false
+    },
+    {
+        _id: "5b21ca3eeb7f6fbccd471727",
+        title: "Deadpool",
+        genre: { _id: "5b21ca3eeb7f6fbccd471818", name: "Action" },
+        numberInStock: 7,
+        dailyRentalRate: 3.5,
+        liked: false
+    },
+    {
+        _id: "5b21ca3eeb7f6fbccd471728",
+        title: "X-Men",
+        genre: { _id: "5b21ca3eeb7f6fbccd471814", name: "Fantasy" },
+        numberInStock: 9,
+        dailyRentalRate: 6.5,
         liked: true
+    },
+    {
+        _id: "5b21ca3eeb7f6fbccd471730",
+        title: "Sunshine",
+        genre: { _id: "5b21ca3eeb7f6fbccd471820", name: "Thriller" },
+        numberInStock: 5,
+        dailyRentalRate: 4.5,
+        liked: false
+    },
+    {
+        _id: "5b21ca3eeb7f6fbccd471731",
+        title: "Event Horizon",
+        genre: { _id: "5b21ca3eeb7f6fbccd471820", name: "Thriller" },
+        numberInStock: 5,
+        dailyRentalRate: 4.5,
+        liked: false
     }
 ];
 

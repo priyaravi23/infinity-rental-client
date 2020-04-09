@@ -15,19 +15,17 @@ class App extends Component {
         return (
             <React.Fragment>
                 <NavBar />
-                <main className="container">
-                    <Switch>
-                        <Route path="/register" component={RegisterForm} />
-                        <Route path="/login" component={LoginForm} />
-                        <Route path="/movies/:id" component={MovieForm} />
-                        <Route path="/movies" component={Movies} />
-                        <Route path="/series" component={TvSeries} />
-                        <Route path="/not-found" component={NotFound} />
-                        <Route path="/movies-app" component={MovieCarousel} />
-                        <Redirect from="/" exact to="/movies-app" />
-                        <Redirect to="/not-found" />
-                    </Switch>
-                </main>
+                <Switch>
+                    <Route path="/register" component={RegisterForm} />
+                    <Route path="/login" component={LoginForm} />
+                    <Route path="/movies/:id" component={MovieForm} />
+                    <Route path="/movies" component={Movies} />
+                    <Route path="/series" component={TvSeries} />
+                    <Route path="/not-found" component={NotFound} />
+                    <Route path="/movies-app" component={MovieCarousel} />
+                    <Redirect from="/" exact to="/movies-app" />
+                    <Redirect to="/not-found" />
+                </Switch>
             </React.Fragment>
         );
     }
