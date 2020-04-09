@@ -11,7 +11,7 @@ const Table = (props) => {
     } = props;
 
     return (
-        <table className="table">
+        <table className="table table-striped">
           <TableHeader
               columns={columns}
               sortColumn={sortColumn}

@@ -1,8 +1,7 @@
 import React from 'react';
-import MoviesApp from '../images/movies-app.png';
-import Movies1 from '../images/movies-1.jpg';
-import Movies2 from '../images/movies-2.png';
-import Movies3 from '../images/movies-3.png';
+import RentalApp from '../images/app.jpg';
+import Rentals from '../images/rentals.jpg';
+import Movies from '../images/movies.jpg';
 import { Link } from 'react-router-dom';
 import '../index.css';
 
@@ -17,7 +16,7 @@ const MovieCarousel = () => {
             </ol>
             <div className="carousel-inner">
                 <div className="carousel-item active">
-                    <img className="d-block w-100" src={MoviesApp} alt="First slide" />
+                    <img className="d-block w-100" src={RentalApp} alt="First slide" />
 
                     <div className="carousel-caption d-none d-md-block">
                         <h2>Rent or Buy</h2>
@@ -30,13 +29,11 @@ const MovieCarousel = () => {
                 </div>
 
                 <div className="carousel-item">
-                    <img className="d-block w-100" src={Movies1} alt="First slide" />
+                    <img className="d-block w-100" src={Rentals} alt="Second slide" />
                 </div>
+
                 <div className="carousel-item">
-                    <img className="d-block w-100" src={Movies2} alt="Second slide" />
-                </div>
-                <div className="carousel-item">
-                    <img className="d-block w-100" src={Movies3} alt="Third slide" />
+                    <img className="d-block w-100" src={Movies} alt="Third slide" />
                 </div>
             </div>
             <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

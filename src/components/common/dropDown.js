@@ -21,7 +21,7 @@ const DropDown = (props) => {
                         <button key={item[valueProperty]}
                             onClick={() => onItemSelect(item)}
                             style={{cursor:'pointer'}}
-                            className={item === selectedItem ? "dropdown-item active" : "dropdown-item"}>
+                            className={item === selectedItem ? "dropdown-item disabled" : "dropdown-item"}>
                             {item[textProperty]}
                             </button>
                     ))}

@@ -7,7 +7,7 @@ import { getMovies, deleteMovie } from "../services/fakeMovieService";
 import { getGenres } from "../services/fakeGenreService";
 import { paginate } from "../utils/paginate";
 import _ from "lodash";
-import SearchBox from "./searchBox";
+import SearchBox from "./common/searchBox";
 import '../index.css';
 
 class Movies extends Component {
@@ -15,7 +15,7 @@ class Movies extends Component {
         movies: [],
         genres: [],
         currentPage: 1,
-        pageSize: 4,
+        pageSize: 10,
         searchQuery: "",
         selectedGenre: null,
         sortColumn: { path: "title", order: "asc" }

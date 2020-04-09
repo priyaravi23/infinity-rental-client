@@ -73,7 +73,7 @@ class MovieForm extends Form {
                     <div className='row'>
                         <div className='col'>
                             <div className='card'>
-                                <div className="header">
+                                <div className="header-img">
                                     <div className="row">
                                         <h3 className='h3-text'>
                                             Add Movie
