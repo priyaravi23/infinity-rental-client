@@ -16,7 +16,7 @@ import Monk from '../images/monk.jpg';
 import Arrow from '../images/arrow.jpg';
 import Originals from '../images/originals.jpg';
 import Shield from '../images/shield.jpg';
-import Heist from '../images/heist.jpeg';
+import Heist from '../images/heist.jpg';
 import HouseOfCards from '../images/house.jpg';
 import WalkingDead from '../images/dead.jpg';
 import Lost from '../images/lost.jpg';

@@ -1,8 +1,9 @@
 import React from 'react';
 import RentalApp from '../images/app.jpg';
 import Rentals from '../images/rentals.jpg';
-import Movies from '../images/movies.jpg';
+import Movies from '../images/trend.jpg';
 import { Link } from 'react-router-dom';
+import MediaList from '../components/mediaList';
 import '../index.css';
 
 const MovieCarousel = () => {
@@ -44,6 +45,8 @@ const MovieCarousel = () => {
                 <span className="sr-only">Next</span>
             </a>
         </div>
+
+          <MediaList />
       </React.Fragment>
   )
 };
