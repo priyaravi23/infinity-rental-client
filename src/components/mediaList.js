@@ -16,36 +16,49 @@ const MediaList = () => {
                     <div className="row">
                         <div className="col-md-12">
                             <div className="row">
+                                
                                 <div className="col-md-4 text-sm-center service-block">
                                     <i className="fas fa-film icon" />
-                                    <h3>NEW TO BUY / RENT</h3>
+                                    <hr />
+                                    <h6>NEW TO BUY / RENT</h6>
                                     <p>Buy OR Rent the latest movies & shows now, and watch anytime, anywhere</p>
                                 </div>
+
                                 <div className="col-md-4 text-sm-center service-block">
                                     <i className="fas fa-glass-cheers icon" />
-                                    <h3>CURL UP AND ENJOY</h3>
+                                    <hr />
+                                    <h6>CURL UP AND ENJOY</h6>
                                     <p>Get reacquainted with some of your favorite films & shows</p>
                                 </div>
+
                                 <div className="col-md-4 text-sm-center service-block">
                                     <i className="fas fa-jedi icon" />
-                                    <h3>STAR WARS</h3>
+                                    <hr />
+                                    <h6>STAR WARS</h6>
                                     <p>Experience the complete galactic saga</p>
                                 </div>
+
                                 <div className="col-md-4 text-sm-center service-block">
-                                    <i className="fas fa-shopping-cart icon" />
-                                    <h3>TOP PRE-ORDERS</h3>
+                                    <i className="fab fa-shopify icon" />
+                                    <hr />
+                                    <h6>TOP PRE-ORDERS</h6>
                                     <p>Pre-order now and they'll hit your Library as soon as they're available</p>
                                 </div>
+
                                 <div className="col-md-4 text-sm-center service-block">
                                     <i className="fas fa-layer-group icon" />
-                                    <h3>RENT A BUNDLE, SAVE A BUNCH</h3>
+                                    <hr />
+                                    <h6>RENT A BUNDLE, SAVE A BUNCH</h6>
                                     <p>Binge Bundles: A New EnFlix Exclusive!</p>
                                 </div>
+
                                 <div className="col-md-4 text-sm-center service-block">
-                                    <i className="fab fa-phoenix-framework icon" />
-                                    <h3>DEALS</h3>
+                                    <i className="fas fa-hand-holding-usd icon" />
+                                    <hr />
+                                    <h6>DEALS</h6>
                                     <p>Own these movies & shows at great prices, for a limited time only</p>
                                 </div>
+
                             </div>
                         </div>
                     </div>

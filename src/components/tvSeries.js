@@ -58,10 +58,17 @@ class Series extends Component {
                                         {this.state.filteredSeries.map(item => (
                                             <div key={item.id} className="card bg-light grid-item">
                                                 <img className="card-img-top img-cover" src={item.url} alt={item.name} />
-                                                <button
-                                                    type="button"
-                                                    className="btn btn-success">Rent
-                                                </button>
+                                                {item.numberInStock === 0 ?
+                                                    (<button
+                                                        type="button"
+                                                        className="btn btn-secondary disabled">Out Of Stock
+                                                    </button>) : (
+                                                        <button
+                                                            type="button"
+                                                            className="btn btn-primary">{`Stock: ${item.numberInStock}`}
+                                                        </button>
+                                                    )
+                                                }
                                             </div>
                                         ))}
                                     </div>

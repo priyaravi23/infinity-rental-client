@@ -6,7 +6,7 @@ const NavBar = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
             <Link className="navbar-brand" to="/">
-                EnFlix <code><i>Rentals</i></code>
+                InFinity <code><i>Rentals</i></code>
             </Link>
             <button
                 className="navbar-toggler"

@@ -63,6 +63,25 @@ code {
   padding-top: 2.5em;
 }
 
+.movie-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: rgba(0,0,0,0.5) !important;
+}
+
+.txt-color {
+  color: white;
+}
+
 .footer {
   background-color: #000000;
   background-image: linear-gradient(315deg, #000000 0%, #958e69 74%);
@@ -101,17 +120,17 @@ code {
   width: 100%;
   display: grid;
   /* Define Auto Row size */
-  grid-auto-rows: 400px;
+  grid-auto-rows: 330px;
   /*Define our columns */
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 1em;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-gap: 0.4em;
 }
 
 .grid-item {
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
-  width: 300px;
-  height: 400px;
+  width: 230px;
+  height: 330px;
 }
 
 .img-cover {
@@ -126,16 +145,17 @@ code {
 .carousel-caption {
   top: 30%;
   bottom: auto;
+  text-align: left !important;
 }
 
 .h1-text {
-  font-size: 60px;
+  font-size: 40px;
   font-weight: bold;
   color: #7ed6df;
 }
 
 .h5-text {
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bold;
 }
 
@@ -149,9 +169,9 @@ code {
   border: none;
   color: #FFFFFF;
   text-align: center;
-  font-size: 28px;
+  font-size: 15px;
   padding: 10px;
-  width: 170px;
+  width: 120px;
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
@@ -196,10 +216,7 @@ code {
 }
 
 .carousel-container{
-  max-width: 100%;
-  height: 50%;
   align-content: center;
-  width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -217,8 +234,6 @@ code {
   border-radius: .25rem;
   margin-top: auto;
   margin-bottom: auto;
-  width: 100%;
-  height: 50%;
   background-color: black;
   color: white;
 }
@@ -233,6 +248,27 @@ code {
   color: #ee9617;
 }
 
-.carousel-inner {
-  max-height: 850px !important;
+.carousel-item {
+  max-height: 650px;
+}
+
+.carousel-caption-border {
+  display: block;
+  border: solid white;
+  border-width: 5px 0 5px 5px;
+  padding: 20px;
+  width: 85%;
+  border-radius: 1em;
+  clip-path: polygon(0 0, 60% 0, 38% 100%, 0 100%);
+}
+
+.slide-caption {
+  position: absolute;
+  left: -600px;
+  animation: slide 0.5s forwards;
+  animation-duration: 3s;
+}
+
+@keyframes slide {
+  100% { left: 0; }
 }

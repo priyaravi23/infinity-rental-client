@@ -72,11 +72,11 @@ class MovieForm extends Form {
                 <div className='container'>
                     <div className='row'>
                         <div className='col'>
-                            <div className='card'>
+                            <div className='movie-card'>
                                 <div className="header-img">
                                     <div className="row">
                                         <h3 className='h3-text'>
-                                            Add Movie
+                                            Add / Edit Movie
                                         </h3>
                                     </div>
 
@@ -86,7 +86,7 @@ class MovieForm extends Form {
                                 </div>
 
                                 <div className='card-body'>
-                                    <form onSubmit={this.handleSubmit}>
+                                    <form className='txt-color' onSubmit={this.handleSubmit}>
                                         {this.renderInput("title", "Title")}
                                         {this.renderSelect("genreId", "Genre", this.state.genres)}
                                         {this.renderInput("numberInStock", "Number in Stock", "number")}

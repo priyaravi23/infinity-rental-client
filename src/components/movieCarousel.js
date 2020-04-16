@@ -1,6 +1,5 @@
 import React from 'react';
-import RentalApp from '../images/app.jpg';
-import Rentals from '../images/rentals.jpg';
+import RentalApp from '../images/rental-app.png';
 import Movies from '../images/trend.jpg';
 import { Link } from 'react-router-dom';
 import MediaList from '../components/mediaList';
@@ -20,16 +19,16 @@ const MovieCarousel = () => {
                     <img className="d-block w-100" src={RentalApp} alt="First slide" />
 
                     <div className="carousel-caption d-none d-md-block">
-                        <h1 className='h1-text'>Rent or Buy</h1>
-                        <h5 className='h5-text'>Movies & TV Shows</h5>
-                        <Link to='/movies'>
-                            <button className='button'><span>Browse</span></button>
-                        </Link>
+                        <div className='carousel-caption-border slide-caption'>
+                            <h1 className='h1-text'>Rent or Buy</h1>
+                            <Link to='/movies'>
+                                <button className='button'><span>Movies</span></button>
+                            </Link>
+                            <Link to='/series'>
+                                <button className='button'><span>TV Shows</span></button>
+                            </Link>
+                        </div>
                     </div>
-                </div>
-
-                <div className="carousel-item">
-                    <img className="d-block w-100" src={Rentals} alt="Second slide" />
                 </div>
 
                 <div className="carousel-item">
